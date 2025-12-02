@@ -4,11 +4,11 @@ async function main() {
     const [deployer] = await ethers.getSigners();
     console.log("Deploying contract with account:", deployer.address);
 
-    const MyToken = await ethers.getContractFactory("MyToken");
+    const RedToken = await ethers.getContractFactory("RedToken.sol");
     const initialSupply = ethers.parseEther("1000000");
-    const myToken = await MyToken.deploy(initialSupply);
+    const redToken = await RedToken.deploy(initialSupply);
 
-    console.log("MyToken deployed to:", myToken.target);
+    console.log("RedToken.sol deployed to:", redToken.target);
 }
 
 main().catch((error) => {
