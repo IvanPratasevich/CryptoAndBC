@@ -1,4 +1,5 @@
 require("@nomicfoundation/hardhat-toolbox");
+require("@openzeppelin/hardhat-upgrades");
 
 /** @type import('hardhat/config').HardhatUserConfig */
 
@@ -15,6 +16,11 @@ module.exports = {
             url: `https://sepolia-rollup.arbitrum.io/rpc`,
             accounts: [PRIVATE_KEY],
             chainId: 421614,
+        },
+        sepolia: {
+            url: `https://0xrpc.io/sep`,
+            accounts: [PRIVATE_KEY],
+            chainId: 11155111,
         },
     },
 };
