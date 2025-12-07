@@ -1,75 +1,64 @@
-# Module 7
+# Module 8
 
-- **Proxy Address:** `0x8dE9Ee2754d1C42192fc4E7aDE74c788eF812111`  
-  [View on Etherscan](https://sepolia.etherscan.io/address/0x8dE9Ee2754d1C42192fc4E7aDE74c788eF812111)
-- **Implementation V1 Address:** `0xcE7E9b70F182eBbD5157Ef6821DfB99f18d5A513`  
-  [View on Etherscan](https://sepolia.etherscan.io/address/0xcE7E9b70F182eBbD5157Ef6821DfB99f18d5A513)
-- **ProxyAdmin Address:** `0x8644F902AEc0642210d73eBF760714759648E384`  
-[View on Etherscan](https://sepolia.etherscan.io/address/0x8644F902AEc0642210d73eBF760714759648E384)
-- **Implementation V2:** `0x4D7A89878b2c4a20040e336b1BC5c130cdf7071F`  
+## The contract design and how it enforces multi-signature approval
+
+Unlike conventional wallets secured by a single private key, a multi‑sig wallet requires a predefined number of authorized owners to confirm a transaction before it can be executed.  
+In the contract this is enforced by:
+- **Confirmation tracking**: each owner must call `confirmTransaction`.
+- **Confirmations check**: without meeting this confirmations, execution reverts.
+- **Modifiers**: `onlyOwner`, `notConfirmed`, and `notExecuted` prevent unauthorized access, duplicate confirmations, or double execution.
+
+**Functions:**
+
+1. `submitTransaction()`: Only an owner can submit a new transaction
+2. `confirmTransaction()`: Owners can approve a transaction
+3. `revokeConfirmation()`: Owners can revoke their approval before execution.
+4. `executeTransaction()`
 
 
+This design distributes control among multiple parties, reducing the risk of unauthorized access or accidental loss, and ensures that no single owner can unilaterally move funds.
 
-## Deployment Scripts
+## Deployment in Local Hardhat Tests and Scripts
 
+In the unit tests, the contract is deployed locally in the `beforeEach()` hook.
 
-```bash
-# 1. 
-npx hardhat run scripts/deploy.js --network sepolia
-
-# 2.
-npx hardhat run scripts/interact.js --network sepolia
-
-# 3.
-npx hardhat run scripts/upgrade.js --network sepolia
-```
-
-## Logs
+How to run:
 
 ```bash
-# 1. 
-npx hardhat run scripts/deploy.js --network sepolia
+# 1. Compile Solidity contract
+npx hardhat compile
 
-my address: 0x94d139bfc9FeDfcA50BeB63909FB3FF7F067E31e
-proxy address: 0x8dE9Ee2754d1C42192fc4E7aDE74c788eF812111
-implementation address: 0xcE7E9b70F182eBbD5157Ef6821DfB99f18d5A513
-proxyAdmin address: 0x8644F902AEc0642210d73eBF760714759648E384
+# 2. Start local server
+npx hardhat node
 
-# 2.
-npx hardhat run scripts/interact.js --network sepolia
-
-ivan: 0x94d139bfc9FeDfcA50BeB63909FB3FF7F067E31e
-token: GreenToken GNT
-ivan balance: 3000000.0
-
------------------------------------------
-Minting
-ivan2 balance before minting: 0.0
-minting 500 tokens to ivan2:
-ivan2 balance after minting: 500.0
------------------------------------------
-ivan1 balance before transfer: 3000000.0
-ivan2 balance before transfer: 500.0
-
-transfer tokens
-transferring 200 tokens
-
-balances:
-ivan1 owner: 2999800.0
-ivan2: 700.0
------------------------------------------
-
-# 3.
-npx hardhat run scripts/upgrade.js --network sepolia
-
-before upgrade:
-balance: 2999800.0
-upgraded to v2
-implementation v2: 0x4D7A89878b2c4a20040e336b1BC5c130cdf7071F
-
-after upgrade:
-balance: 2999800.0
-balance unchanged: 2999800.0
-version: V2
-
+# 3. Run tests
+npm run test
 ```
+
+## Security Considerations
+- Checks-Effects-Interactions Pattern: Used in executeTransaction to prevent reentrancy attacks.
+
+- Access Control: onlyOwner modifier ensures only designated owners can interact with sensitive functions.
+
+### Validation:
+
+- Owners must be unique and non-zero addresses.
+
+- Confirmation threshold must be valid
+
+- Error Handling
+
+- Event Logging: All critical actions emit events for transparency and monitoring.
+
+## Potential Vulnerabilities Addressed
+- Duplicate Confirmations
+
+- Unauthorized Access
+
+- Replay/Double Execution
+
+- Invalid Transactions
+
+
+
+Multi-sig wallets enhance security by requiring multiple approvals before a transaction executes. They eliminate single points of failure, protect against hacks or lost keys, and enable trustless collaboration—ideal for DAOs, teams, and treasury management. While slower to operate, they provide critical protection for high-value accounts in decentralized apps, making them a cornerstone of secure on-chain governance.
