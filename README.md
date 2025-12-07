@@ -61,4 +61,4 @@ npm run test
 
 
 
-Multi-sig wallets enhance security by requiring multiple approvals before a transaction executes. They eliminate single points of failure, protect against hacks or lost keys, and enable trustless collaboration—ideal for DAOs, teams, and treasury management. While slower to operate, they provide critical protection for high-value accounts in decentralized apps, making them a cornerstone of secure on-chain governance.
+Multi-sig wallets enhance security by requiring multiple approvals before a transaction executes. They eliminate single points of failure, protect against hacks or lost keys, and enable trustless collaboration - ideal for DAOs, teams, and treasury management. While slower to operate, they provide critical protection for high-value accounts in decentralized apps, making them a cornerstone of secure on-chain governance.
