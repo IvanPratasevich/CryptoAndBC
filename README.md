@@ -33,6 +33,13 @@ Student1 balance: 1
 Student2 balance: 1
 ```
 
+<img width="1421" height="710" alt="image" src="https://github.com/user-attachments/assets/2527f6d6-915b-4856-8c19-64161a08bc26" />
+<img width="905" height="240" alt="image" src="https://github.com/user-attachments/assets/87f54356-cdcd-4426-86f5-c7644e1794bf" />
+<img width="816" height="712" alt="image" src="https://github.com/user-attachments/assets/d6f3b63f-52e8-4990-9ba5-4f45d7550c6a" />
+
+
+
+
 ## ERC-1155 Game Character Collection Contract
 ```bash
 # Logs
