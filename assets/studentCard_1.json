@@ -1,0 +1,23 @@
+{
+  "name": "Ivan Student Visit Card",
+  "description": "Student Visit Card",
+  "image": "ipfs://bafybeiggs3juaaan6qqzcj47qtsl3ohynjoxr7zrw6kuj2dya5h2gzxooa",
+  "attributes": [
+    {
+      "trait_type": "studentName",
+      "value": "Ivan"
+    },
+    {
+      "trait_type": "studentID",
+      "value": "student1"
+    },
+    {
+      "trait_type": "course",
+      "value": "cryptoandbc"
+    },
+    {
+      "trait_type": "year",
+      "value": "2025"
+    }
+  ]
+}

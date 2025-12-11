@@ -1,0 +1,26 @@
+PS D:\Ivan\Projects\CryptoAndBC> npx hardhat run scripts/localhost/deployERC721.js --network sepolia
+deployer: 0x94d139bfc9FeDfcA50BeB63909FB3FF7F067E31e
+VisitCard deployed at: 0xdEFAA689AFE32E8984c72ebFB45d5Ba353B4f8cd
+
+---------
+
+PS D:\Ivan\Projects\CryptoAndBC> npx hardhat run scripts/network/interactERC721VisitCard.js --network sepolia
+student1: 0x94d139bfc9FeDfcA50BeB63909FB3FF7F067E31e
+student2: 0x173e2fb370ad50961ebd369caddbb2c8ef1084b8
+--------------------------
+Student1 minted! Tx: 0x4db8fd6f9f118f7795b05b1a8ea99fb82a713cdd0198e5cfd3de6e1f42d72add
+Token ID Student1: 1
+Student Student1: 0x94d139bfc9FeDfcA50BeB63909FB3FF7F067E31e
+URI Student1: ipfs://bafkreigtuuhoxl7zzus6f6n7ozqaj362yqn7bu5zcwhrfxx64oxickpqqi
+tokenURI check Student1: ipfs://bafkreigtuuhoxl7zzus6f6n7ozqaj362yqn7bu5zcwhrfxx64oxickpqqi
+--------------------------
+MINT STUDENT 2
+Student2 minted! Tx: 0xd2f4638705a428d9da1de0831680934a9c073b398bf4179b6ef49ff7f9b0ed8f
+Token ID Student2: 2
+Student Student2: 0x173E2fb370Ad50961EBD369CaddbB2c8Ef1084B8
+URI Student2: ipfs://bafkreibojiiltf5hlbabtpzybrfqlx26ay4elj77ogzvej4nrd7z5ufxwa
+tokenURI check: ipfs://bafkreibojiiltf5hlbabtpzybrfqlx26ay4elj77ogzvej4nrd7z5ufxwa
+
+FINAL STATS
+Student1 balance: 1
+Student2 balance: 1

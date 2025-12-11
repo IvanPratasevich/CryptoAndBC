@@ -8,6 +8,8 @@ ignition/deployments
 /cache
 /artifacts
 
+/textfiles
+
 # TypeChain files
 /typechain
 /typechain-types
