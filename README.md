@@ -1,64 +1,89 @@
-# Module 8
+# Module 9
 
-## The contract design and how it enforces multi-signature approval
-
-Unlike conventional wallets secured by a single private key, a multi‑sig wallet requires a predefined number of authorized owners to confirm a transaction before it can be executed.  
-In the contract this is enforced by:
-- **Confirmation tracking**: each owner must call `confirmTransaction`.
-- **Confirmations check**: without meeting this confirmations, execution reverts.
-- **Modifiers**: `onlyOwner`, `notConfirmed`, and `notExecuted` prevent unauthorized access, duplicate confirmations, or double execution.
-
-**Functions:**
-
-1. `submitTransaction()`: Only an owner can submit a new transaction
-2. `confirmTransaction()`: Owners can approve a transaction
-3. `revokeConfirmation()`: Owners can revoke their approval before execution.
-4. `executeTransaction()`
-
-
-This design distributes control among multiple parties, reducing the risk of unauthorized access or accidental loss, and ensures that no single owner can unilaterally move funds.
-
-## Deployment in Local Hardhat Tests and Scripts
-
-In the unit tests, the contract is deployed locally in the `beforeEach()` hook.
-
-How to run:
-
+## ERC-721 Soulbound Student Visit Card Contract
 ```bash
-# 1. Compile Solidity contract
-npx hardhat compile
+# Logs
+# 0.
+#npx hardat compile
+# 1. deploy network
+#npx hardhat run scripts/localhost/deployERC721.js --network sepolia
+deployer: 0x94d139bfc9FeDfcA50BeB63909FB3FF7F067E31e
+VisitCard deployed at: 0xdEFAA689AFE32E8984c72ebFB45d5Ba353B4f8cd
 
-# 2. Start local server
-npx hardhat node
+# 2. mint
+# npx hardhat run scripts/network/interactERC721VisitCard.js --network sepolia
+student1: 0x94d139bfc9FeDfcA50BeB63909FB3FF7F067E31e
+student2: 0x173e2fb370ad50961ebd369caddbb2c8ef1084b8
+--------------------------
+Student1 minted! Tx: 0x4db8fd6f9f118f7795b05b1a8ea99fb82a713cdd0198e5cfd3de6e1f42d72add
+Token ID Student1: 1
+Student Student1: 0x94d139bfc9FeDfcA50BeB63909FB3FF7F067E31e
+URI Student1: ipfs://bafkreigtuuhoxl7zzus6f6n7ozqaj362yqn7bu5zcwhrfxx64oxickpqqi
+tokenURI check Student1: ipfs://bafkreigtuuhoxl7zzus6f6n7ozqaj362yqn7bu5zcwhrfxx64oxickpqqi
+--------------------------
+MINT STUDENT 2
+Student2 minted! Tx: 0xd2f4638705a428d9da1de0831680934a9c073b398bf4179b6ef49ff7f9b0ed8f
+Token ID Student2: 2
+Student Student2: 0x173E2fb370Ad50961EBD369CaddbB2c8Ef1084B8
+URI Student2: ipfs://bafkreibojiiltf5hlbabtpzybrfqlx26ay4elj77ogzvej4nrd7z5ufxwa
+tokenURI check: ipfs://bafkreibojiiltf5hlbabtpzybrfqlx26ay4elj77ogzvej4nrd7z5ufxwa
 
-# 3. Run tests
-npm run test
+FINAL STATS
+Student1 balance: 1
+Student2 balance: 1
 ```
 
-## Security Considerations
-- Checks-Effects-Interactions Pattern: Used in executeTransaction to prevent reentrancy attacks.
+## ERC-1155 Game Character Collection Contract
+```bash
+# Logs
+#0. npx hardat compile
+# 1. deploy network npx hardhat run scripts/localhost/deployERC1155.js --network localhost
+Deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
 
-- Access Control: onlyOwner modifier ensures only designated owners can interact with sensitive functions.
+# 2 batchMint, batchTransfer. 
+# npx hardhat run scripts/localhost/batchMint-batchTransfer-ERC155.js --network localhost
+BATCH MINT
+Minted!!!!!
 
-### Validation:
+Token ID | Balance (0xf39Fd6e5...) (owner)
+-------------------
+Token 1: 2
+Token 2: 2
+Token 3: 1
+Token 4: 1
+Token 5: 1
+Token 6: 1
+Token 7: 1
+Token 8: 1
+Token 9: 1
+Token 10: 1
+SENT Token 5 and 6 to STUDENT2!
+--------OWNER AFTER------------
 
-- Owners must be unique and non-zero addresses.
+Token ID | Balance (0xf39Fd6e5...) (owner)
+-------------------
+Token 1: 2
+Token 2: 2
+Token 3: 1
+Token 4: 1
+Token 5: 0
+Token 6: 0
+Token 7: 1
+Token 8: 1
+Token 9: 1
+Token 10: 1
+---------STUDENT2 AFTER----------
 
-- Confirmation threshold must be valid
-
-- Error Handling
-
-- Event Logging: All critical actions emit events for transparency and monitoring.
-
-## Potential Vulnerabilities Addressed
-- Duplicate Confirmations
-
-- Unauthorized Access
-
-- Replay/Double Execution
-
-- Invalid Transactions
-
-
-
-Multi-sig wallets enhance security by requiring multiple approvals before a transaction executes. They eliminate single points of failure, protect against hacks or lost keys, and enable trustless collaboration - ideal for DAOs, teams, and treasury management. While slower to operate, they provide critical protection for high-value accounts in decentralized apps, making them a cornerstone of secure on-chain governance.
+Token ID | Balance (0x70997970...) (student2)
+-------------------
+Token 1: 0
+Token 2: 0
+Token 3: 0
+Token 4: 0
+Token 5: 1
+Token 6: 1
+Token 7: 0
+Token 8: 0
+Token 9: 0
+Token 10: 0
+```
