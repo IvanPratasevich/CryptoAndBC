@@ -36,6 +36,12 @@ Student2 balance: 1
 <img width="1421" height="710" alt="image" src="https://github.com/user-attachments/assets/2527f6d6-915b-4856-8c19-64161a08bc26" />
 <img width="905" height="240" alt="image" src="https://github.com/user-attachments/assets/87f54356-cdcd-4426-86f5-c7644e1794bf" />
 <img width="816" height="712" alt="image" src="https://github.com/user-attachments/assets/d6f3b63f-52e8-4990-9ba5-4f45d7550c6a" />
+<img width="452" height="499" alt="image" src="https://github.com/user-attachments/assets/1220ea5d-391f-4b16-a145-c92fdc6c5f33" />
+<img width="832" height="729" alt="image" src="https://github.com/user-attachments/assets/95d6f6d7-ad72-404d-a3e7-b3d47b5be2ff" />
+<img width="449" height="408" alt="image" src="https://github.com/user-attachments/assets/d1c5c22a-39fd-447d-ae44-c8d5e9ebc95d" />
+
+
+
 
 
 
