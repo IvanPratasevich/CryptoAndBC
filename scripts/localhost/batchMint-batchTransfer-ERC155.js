@@ -4,6 +4,8 @@ const CONTRACT_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
 
 async function main() {
     const [owner, student2] = await ethers.getSigners();
+    console.log("Owner: ", owner.address);
+    console.log("Student2: ", student2.address);
     const gameCharacter = await ethers.getContractAt("GameCharacterERC1155", CONTRACT_ADDRESS);
     for (let id of [1,2,3,4,5,6,7,8,9,10]) {
         const uri = await gameCharacter.uri(id);

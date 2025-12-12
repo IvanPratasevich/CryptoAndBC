@@ -1,6 +1,6 @@
 const { printBalances } = require("../balance");
 
-const CONTRACT_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+const CONTRACT_ADDRESS = "0x82b5CBa3636c0fca62021791476880B207DFDD7a";
 const student2 = "0x173e2fb370ad50961ebd369caddbb2c8ef1084b8"; // ivan2 account
 
 

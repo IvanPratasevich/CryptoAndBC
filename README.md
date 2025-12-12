@@ -44,8 +44,76 @@ Student2 balance: 1
 ### &nbsp;&nbsp;&nbsp;&nbsp;
 
 ## ERC-1155 Game Character Collection Contract
+
 ```bash
-# Logs
+# Logs LOCALHOST
+# npx hardhat run scripts/network/batchMint-batchTransfer-ERC155.js --network sepolia 
+Balance before. owner
+
+Token ID | Balance (0x94d139bf...) (owner)
+-------------------
+Token 1: 1
+Token 2: 1
+Token 3: 1
+Token 4: 1
+Token 5: 1
+Token 6: 1
+Token 7: 1
+Token 8: 1
+Token 9: 1
+Token 10: 1
+--------------------
+BATCH MINT
+Minted!!!!!
+
+Token ID | Balance (0x94d139bf...) (owner)
+-------------------
+Token 1: 2
+Token 2: 2
+Token 3: 1
+Token 4: 1
+Token 5: 1
+Token 6: 1
+Token 7: 1
+Token 8: 1
+Token 9: 1
+Token 10: 1
+SENT Token 5 and 6 to STUDENT2!
+--------OWNER AFTER------------
+
+Token ID | Balance (0x94d139bf...) (owner)
+-------------------
+Token 1: 2
+Token 2: 2
+Token 3: 1
+Token 4: 1
+Token 5: 0
+Token 6: 0
+Token 7: 1
+Token 8: 1
+Token 9: 1
+Token 10: 1
+---------STUDENT2 AFTER----------
+
+Token ID | Balance (0x173e2fb3...) (student2)
+-------------------
+Token 1: 0
+Token 2: 0
+Token 3: 0
+Token 4: 0
+Token 5: 1
+Token 6: 1
+Token 7: 0
+Token 8: 0
+Token 9: 0
+Token 10: 0
+```
+
+ 
+
+
+```bash
+# Logs LOCALHOST
 #0. npx hardat compile
 # 1. deploy network npx hardhat run scripts/localhost/deployERC1155.js --network localhost
 Deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
