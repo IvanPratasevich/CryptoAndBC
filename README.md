@@ -51,7 +51,8 @@ Student2 balance: 1
 <img width="437" height="407" alt="image" src="https://github.com/user-attachments/assets/1504c89c-17e7-44d4-bac9-2fb7a505b188" />
 <img width="864" height="614" alt="image" src="https://github.com/user-attachments/assets/dd98022c-bafd-4756-9b3d-7c6f489595c8" />
 
-CONTRACT_ADDRESS = "0x82b5CBa3636c0fca62021791476880B207DFDD7a";
+- You can find metadata in assets folder.
+- CONTRACT_ADDRESS = "0x82b5CBa3636c0fca62021791476880B207DFDD7a";
 ```bash
 # Logs NETWORK
 # npx hardhat run scripts/network/batchMint-batchTransfer-ERC155.js --network sepolia 
