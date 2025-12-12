@@ -52,6 +52,141 @@ Deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
 
 # 2 batchMint, batchTransfer. 
 # npx hardhat run scripts/localhost/batchMint-batchTransfer-ERC155.js --network localhost
+Token 1 URI: ipfs://bafkreiahcxyuxetm3qirthefpeh523ccb7t6besfvnvkypkoc52vecnv4q
+Metadata for token 1: {
+  name: 'Azure Vortex',
+  description: 'A swirling world of teal currents and deep blue oceans.',
+  image: 'ipfs://bafybeih2yl4mpl7uadcdb4sugpbabedoss4wer5uom77ew4m622o3wxkoq',
+  attributes: [
+    { trait_type: 'Rarity', value: 'Rare' },
+    { trait_type: 'Terrain Type', value: 'Fluid Swirl' },
+    { trait_type: 'Energy Level', value: 75 },
+    { trait_type: 'Resource Density', value: 60 }
+  ]
+}
+Token 2 URI: ipfs://bafkreifoet4s7amkkcwquku5sqbtaeqbpfbir6fw7p4pcy7cavfc77rjp4
+Metadata for token 2: {
+  name: 'Neon Nebula',
+  description: 'A vibrant planet featuring mint green and deep violet camo patterns.',
+  image: 'ipfs://bafybeih4o7grmtajjxxmqam2wgs66xsr5nqvhvuuvt5x2e4ifjl7lmblni',
+  attributes: [
+    { trait_type: 'Rarity', value: 'Epic' },
+    { trait_type: 'Terrain Type', value: 'Neon Camo' },
+    { trait_type: 'Energy Level', value: 85 },
+    { trait_type: 'Resource Density', value: 70 }
+  ]
+}
+Token 3 URI: ipfs://bafkreifanvm3dcwm4vtvx3yeqmywosgou5jhlmuofttxaqu2ltahdcdm5i
+Metadata for token 3: {
+  name: 'Ember Crust',
+  description: 'A hot surface of orange, red, and dark brown mineral deposits.',
+  image: 'ipfs://bafkreif7jkrze2is6julpsvat3rwqv7cm5f2g6db4acx5ltzss6zvjgcrq',
+  attributes: [
+    { trait_type: 'Rarity', value: 'Common' },
+    { trait_type: 'Terrain Type', value: 'Mottled Rock' },
+    { trait_type: 'Energy Level', value: 40 },
+    { trait_type: 'Resource Density', value: 30 }
+  ]
+}
+Token 4 URI: ipfs://bafkreih7zgn32h4e3rxggjedjzlpsgixbqcj3ymg2k6fcky2rfofoeb2hi
+Metadata for token 4: {
+  name: 'Gaia Green',
+  description: 'A lush terrestrial world with blue oceans and green continents.',
+  image: 'ipfs://bafybeibtmlxmjddqvz2ofrhqlqk7kwyohx5p7cf2jrmbz6npv7fddlhu3e',
+  attributes: [
+    { trait_type: 'Rarity', value: 'Rare' },
+    { trait_type: 'Terrain Type', value: 'Continental' },
+    { trait_type: 'Energy Level', value: 60 },
+    { trait_type: 'Resource Density', value: 85 }
+  ]
+}
+Token 5 URI: ipfs://bafkreiasia5tlp7bycn72ozt2hhro52huwhr4ok3m64aakwqcwdywowd3e
+Metadata for token 5: {
+  name: 'Cobalt Void',
+  description: 'A dark, rocky sphere with deep blue crater-like spots.',
+  image: 'ipfs://bafybeieyy6huprhyim3tusxxuykaatrnc4ljwdsbgj66qhvwsvx77cnfde',
+  attributes: [
+    { trait_type: 'Rarity', value: 'Uncommon' },
+    { trait_type: 'Terrain Type', value: 'Spotted Crust' },
+    { trait_type: 'Energy Level', value: 35 },
+    { trait_type: 'Resource Density', value: 45 }
+  ]
+}
+Token 6 URI: ipfs://bafkreigpzr4mltujdlcmpuzkss4homu5yru6viy3jwniwgsi2hnqabm4j4
+Metadata for token 6: {
+  name: 'Desert Mirage',
+  description: 'A sandy world covered in beige and brown desert dunes.',
+  image: 'ipfs://bafybeic24ipdtlwpplweqwajacx4yqwuczallqsreugq63bdnsayv5ulyu',
+  attributes: [
+    { trait_type: 'Rarity', value: 'Common' },
+    { trait_type: 'Terrain Type', value: 'Sand Camo' },
+    { trait_type: 'Energy Level', value: 25 },
+    { trait_type: 'Resource Density', value: 20 }
+  ]
+}
+Token 7 URI: ipfs://bafkreihn3rjcmtjfpxllr5damkicy73yocxz42v2aebsu22xpr72xiedtm
+Metadata for token 7: {
+  name: 'Rose Quartz',
+  description: 'A dusty pink planet with deep maroon tectonic patterns.',
+  image: 'ipfs://bafybeidiswg7jxqhbt5z43b3xuoxyl5ujtsjwconuwoqyel5vw7qgusdbi',
+  attributes: [
+    { trait_type: 'Rarity', value: 'Uncommon' },
+    { trait_type: 'Terrain Type', value: 'Crystalline' },
+    { trait_type: 'Energy Level', value: 50 },
+    { trait_type: 'Resource Density', value: 55 }
+  ]
+}
+Token 8 URI: ipfs://bafkreicedgufihulo3xevpsiqz74al6iye4yjhhzhlv4r7aofukpwi4f6e
+Metadata for token 8: {
+  name: 'Glacial Tide',
+  description: 'A cold, bright blue world with scattered white ice floes.',
+  image: 'ipfs://bafybeid2m5l26e2wmbeem52q62wnao6tzqcuwpxpuwurvoicc52a7lff2y',
+  attributes: [
+    { trait_type: 'Rarity', value: 'Epic' },
+    { trait_type: 'Terrain Type', value: 'Frozen Glacial' },
+    { trait_type: 'Energy Level', value: 80 },
+    { trait_type: 'Resource Density', value: 65 }
+  ]
+}
+Token 9 URI: ipfs://bafkreiditbqlceij5a6cynyde7xc4zybtapfzeli3jl72lb2rjzissuwvi
+Metadata for token 9: {
+  name: 'Magma Stripes',
+  description: 'A volatile world of flowing magma and red-hot gas bands.',
+  image: 'ipfs://bafybeif4okwbtr5tntyfmfwdmnxkm5hpypmjgdbkdtyrdsapyabnlqsisq',
+  attributes: [
+    { trait_type: 'Rarity', value: 'Legendary' },
+    { trait_type: 'Terrain Type', value: 'Molten Banded' },
+    { trait_type: 'Energy Level', value: 95 },
+    { trait_type: 'Resource Density', value: 90 }
+  ]
+}
+Token 10 URI: ipfs://bafkreiexuyuxbem4qa47culffcbyj3zm3mamamizimryacmaf4zxob57zq
+Metadata for token 10: {
+  name: 'Void Purple',
+  description: 'A mysterious sphere draped in deep purple and lavender cosmic mist.',
+  image: 'ipfs://bafkreiemnpoz6iqgi2vgyazr4ira7s7eqtbda7aqyy5omjgjazjelusuiq',
+  attributes: [
+    { trait_type: 'Rarity', value: 'Legendary' },
+    { trait_type: 'Terrain Type', value: 'Dark Matter' },
+    { trait_type: 'Energy Level', value: 99 },
+    { trait_type: 'Resource Density', value: 98 }
+  ]
+}
+Balance before. owner
+
+Token ID | Balance (0xf39Fd6e5...) (owner)
+-------------------
+Token 1: 1
+Token 2: 1
+Token 3: 1
+Token 4: 1
+Token 5: 1
+Token 6: 1
+Token 7: 1
+Token 8: 1
+Token 9: 1
+Token 10: 1
+--------------------
 BATCH MINT
 Minted!!!!!
 

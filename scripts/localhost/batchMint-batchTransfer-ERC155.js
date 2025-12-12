@@ -5,7 +5,18 @@ const CONTRACT_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
 async function main() {
     const [owner, student2] = await ethers.getSigners();
     const gameCharacter = await ethers.getContractAt("GameCharacterERC1155", CONTRACT_ADDRESS);
+    for (let id of [1,2,3,4,5,6,7,8,9,10]) {
+        const uri = await gameCharacter.uri(id);
+        console.log(`Token ${id} URI: ${uri}`);
 
+        let url = uri.replace("ipfs://", "https://ipfs.io/ipfs/");
+        const res = await fetch(url);
+        const metadata = await res.json();
+        console.log(`Metadata for token ${id}:`, metadata);
+    }
+    console.log('Balance before. owner')
+    await printBalances(gameCharacter, owner.address, "owner");
+    console.log("--------------------");
     console.log("BATCH MINT");
     const ids = [1, 2];
     const amount = [1, 1];
