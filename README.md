@@ -51,7 +51,9 @@ Student2 balance: 1
 <img width="437" height="407" alt="image" src="https://github.com/user-attachments/assets/1504c89c-17e7-44d4-bac9-2fb7a505b188" />
 <img width="864" height="614" alt="image" src="https://github.com/user-attachments/assets/dd98022c-bafd-4756-9b3d-7c6f489595c8" />
 
-- You can find metadata in assets folder.
+- You can find metadata in assets/planets/files/ folder.
+- Files deployed via pinata.cloud/ipfs website ("Pinata Cloud is a pinning service that allows users to host files on the IPFS network")
+- <img width="1748" height="746" alt="image" src="https://github.com/user-attachments/assets/41e7ad04-bcef-4b9e-8951-9ab5e3d38778" />
 - CONTRACT_ADDRESS = "0x82b5CBa3636c0fca62021791476880B207DFDD7a";
 ```bash
 # Logs NETWORK
