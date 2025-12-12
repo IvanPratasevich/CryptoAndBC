@@ -1,6 +1,7 @@
 # Module 9
 
 ## ERC-721 Soulbound Student Visit Card Contract
+
 ```bash
 # Logs
 # 0.
@@ -45,8 +46,14 @@ Student2 balance: 1
 
 ## ERC-1155 Game Character Collection Contract
 
+### MetaMask
+<img width="858" height="884" alt="image" src="https://github.com/user-attachments/assets/afb231f5-d158-4dd9-a4a2-328fd066e587" />
+<img width="437" height="407" alt="image" src="https://github.com/user-attachments/assets/1504c89c-17e7-44d4-bac9-2fb7a505b188" />
+<img width="864" height="614" alt="image" src="https://github.com/user-attachments/assets/dd98022c-bafd-4756-9b3d-7c6f489595c8" />
+
+CONTRACT_ADDRESS = "0x82b5CBa3636c0fca62021791476880B207DFDD7a";
 ```bash
-# Logs LOCALHOST
+# Logs NETWORK
 # npx hardhat run scripts/network/batchMint-batchTransfer-ERC155.js --network sepolia 
 Balance before. owner
 
