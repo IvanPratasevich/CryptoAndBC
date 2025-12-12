@@ -1,0 +1,11 @@
+{
+  "name": "Magma Stripes",
+  "description": "A volatile world of flowing magma and red-hot gas bands.",
+  "image": "ipfs://bafybeif4okwbtr5tntyfmfwdmnxkm5hpypmjgdbkdtyrdsapyabnlqsisq",
+  "attributes": [
+    { "trait_type": "Rarity", "value": "Legendary" },
+    { "trait_type": "Terrain Type", "value": "Molten Banded" },
+    { "trait_type": "Energy Level", "value": 95 },
+    { "trait_type": "Resource Density", "value": 90 }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Neon Nebula",
+  "description": "A vibrant planet featuring mint green and deep violet camo patterns.",
+  "image": "ipfs://bafybeih4o7grmtajjxxmqam2wgs66xsr5nqvhvuuvt5x2e4ifjl7lmblni",
+  "attributes": [
+    { "trait_type": "Rarity", "value": "Epic" },
+    { "trait_type": "Terrain Type", "value": "Neon Camo" },
+    { "trait_type": "Energy Level", "value": 85 },
+    { "trait_type": "Resource Density", "value": 70 }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Desert Mirage",
+  "description": "A sandy world covered in beige and brown desert dunes.",
+  "image": "ipfs://bafybeic24ipdtlwpplweqwajacx4yqwuczallqsreugq63bdnsayv5ulyu",
+  "attributes": [
+    { "trait_type": "Rarity", "value": "Common" },
+    { "trait_type": "Terrain Type", "value": "Sand Camo" },
+    { "trait_type": "Energy Level", "value": 25 },
+    { "trait_type": "Resource Density", "value": 20 }
+  ]
+}

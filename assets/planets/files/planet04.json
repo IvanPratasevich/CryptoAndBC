@@ -1,0 +1,11 @@
+{
+  "name": "Cobalt Void",
+  "description": "A dark, rocky sphere with deep blue crater-like spots.",
+  "image": "ipfs://bafybeieyy6huprhyim3tusxxuykaatrnc4ljwdsbgj66qhvwsvx77cnfde",
+  "attributes": [
+    { "trait_type": "Rarity", "value": "Uncommon" },
+    { "trait_type": "Terrain Type", "value": "Spotted Crust" },
+    { "trait_type": "Energy Level", "value": 35 },
+    { "trait_type": "Resource Density", "value": 45 }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Azure Vortex",
+  "description": "A swirling world of teal currents and deep blue oceans.",
+  "image": "ipfs://bafybeih2yl4mpl7uadcdb4sugpbabedoss4wer5uom77ew4m622o3wxkoq",
+  "attributes": [
+    { "trait_type": "Rarity", "value": "Rare" },
+    { "trait_type": "Terrain Type", "value": "Fluid Swirl" },
+    { "trait_type": "Energy Level", "value": 75 },
+    { "trait_type": "Resource Density", "value": 60 }
+  ]
+}

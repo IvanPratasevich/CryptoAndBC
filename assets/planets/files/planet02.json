@@ -1,0 +1,11 @@
+{
+  "name": "Ember Crust",
+  "description": "A hot surface of orange, red, and dark brown mineral deposits.",
+  "image": "ipfs://bafkreif7jkrze2is6julpsvat3rwqv7cm5f2g6db4acx5ltzss6zvjgcrq",
+  "attributes": [
+    { "trait_type": "Rarity", "value": "Common" },
+    { "trait_type": "Terrain Type", "value": "Mottled Rock" },
+    { "trait_type": "Energy Level", "value": 40 },
+    { "trait_type": "Resource Density", "value": 30 }
+  ]
+}

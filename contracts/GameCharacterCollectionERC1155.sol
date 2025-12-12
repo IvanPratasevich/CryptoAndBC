@@ -10,25 +10,25 @@ contract GameCharacterERC1155 is ERC1155, Ownable, ERC1155URIStorage {
 
     constructor() ERC1155("") Ownable(msg.sender) {
         _mint(msg.sender, 1, 1, "");
-        ERC1155URIStorage._setURI(1, "ipfs://baaaa1");
+        ERC1155URIStorage._setURI(1, "ipfs://bafkreiahcxyuxetm3qirthefpeh523ccb7t6besfvnvkypkoc52vecnv4q");
         _mint(msg.sender, 2, 1, "");
-        ERC1155URIStorage._setURI(2, "ipfs://2");
+        ERC1155URIStorage._setURI(2, "ipfs://bafkreifoet4s7amkkcwquku5sqbtaeqbpfbir6fw7p4pcy7cavfc77rjp4");
         _mint(msg.sender, 3, 1, "");
-        ERC1155URIStorage._setURI(3, "ipfs://3");
+        ERC1155URIStorage._setURI(3, "ipfs://bafkreifanvm3dcwm4vtvx3yeqmywosgou5jhlmuofttxaqu2ltahdcdm5i");
         _mint(msg.sender, 4, 1, "");
-        ERC1155URIStorage._setURI(4, "ipfs://4");
+        ERC1155URIStorage._setURI(4, "ipfs://bafkreih7zgn32h4e3rxggjedjzlpsgixbqcj3ymg2k6fcky2rfofoeb2hi");
         _mint(msg.sender, 5, 1, "");
-        ERC1155URIStorage._setURI(5, "ipfs://5");
+        ERC1155URIStorage._setURI(5, "ipfs://bafkreiasia5tlp7bycn72ozt2hhro52huwhr4ok3m64aakwqcwdywowd3e");
         _mint(msg.sender, 6, 1, "");
-        ERC1155URIStorage._setURI(6, "ipfs://6");
+        ERC1155URIStorage._setURI(6, "ipfs://bafkreigpzr4mltujdlcmpuzkss4homu5yru6viy3jwniwgsi2hnqabm4j4");
         _mint(msg.sender, 7, 1, "");
-        ERC1155URIStorage._setURI(7, "ipfs://7");
+        ERC1155URIStorage._setURI(7, "ipfs://bafkreihn3rjcmtjfpxllr5damkicy73yocxz42v2aebsu22xpr72xiedtm");
         _mint(msg.sender, 8, 1, "");
-        ERC1155URIStorage._setURI(8, "ipfs://8");
+        ERC1155URIStorage._setURI(8, "ipfs://bafkreicedgufihulo3xevpsiqz74al6iye4yjhhzhlv4r7aofukpwi4f6e");
         _mint(msg.sender, 9, 1, "");
-        ERC1155URIStorage._setURI(9, "ipfs://9");
+        ERC1155URIStorage._setURI(9, "ipfs://bafkreiditbqlceij5a6cynyde7xc4zybtapfzeli3jl72lb2rjzissuwvi");
         _mint(msg.sender, 10, 1, "");
-        ERC1155URIStorage._setURI(10, "ipfs://bafybeistormrider10");
+        ERC1155URIStorage._setURI(10, "ipfs://bafkreiexuyuxbem4qa47culffcbyj3zm3mamamizimryacmaf4zxob57zq");
     }
 
     function mintBatch(

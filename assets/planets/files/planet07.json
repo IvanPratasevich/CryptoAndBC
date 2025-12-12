@@ -1,0 +1,11 @@
+{
+  "name": "Glacial Tide",
+  "description": "A cold, bright blue world with scattered white ice floes.",
+  "image": "ipfs://bafybeid2m5l26e2wmbeem52q62wnao6tzqcuwpxpuwurvoicc52a7lff2y",
+  "attributes": [
+    { "trait_type": "Rarity", "value": "Epic" },
+    { "trait_type": "Terrain Type", "value": "Frozen Glacial" },
+    { "trait_type": "Energy Level", "value": 80 },
+    { "trait_type": "Resource Density", "value": 65 }
+  ]
+}

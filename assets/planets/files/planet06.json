@@ -1,0 +1,11 @@
+{
+  "name": "Rose Quartz",
+  "description": "A dusty pink planet with deep maroon tectonic patterns.",
+  "image": "ipfs://bafybeidiswg7jxqhbt5z43b3xuoxyl5ujtsjwconuwoqyel5vw7qgusdbi",
+  "attributes": [
+    { "trait_type": "Rarity", "value": "Uncommon" },
+    { "trait_type": "Terrain Type", "value": "Crystalline" },
+    { "trait_type": "Energy Level", "value": 50 },
+    { "trait_type": "Resource Density", "value": 55 }
+  ]
+}

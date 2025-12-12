@@ -1,0 +1,11 @@
+{
+  "name": "Gaia Green",
+  "description": "A lush terrestrial world with blue oceans and green continents.",
+  "image": "ipfs://bafybeibtmlxmjddqvz2ofrhqlqk7kwyohx5p7cf2jrmbz6npv7fddlhu3e",
+  "attributes": [
+    { "trait_type": "Rarity", "value": "Rare" },
+    { "trait_type": "Terrain Type", "value": "Continental" },
+    { "trait_type": "Energy Level", "value": 60 },
+    { "trait_type": "Resource Density", "value": 85 }
+  ]
+}
